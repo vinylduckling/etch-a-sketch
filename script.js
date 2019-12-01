@@ -40,7 +40,7 @@ function clearGrid() { //and prompt
 function adjustGridSize(side) {
     customGridSideLength = side;
     let myGrid = document.querySelector('.grid');
-    myGrid.style.cssText = "display:grid;grid-template-columns: repeat(" + customGridSideLength +", " + (totalWidth/customGridSideLength) + "px);grid-template-rows: repeat(" + customGridSideLength +", " + (totalWidth/customGridSideLength) + "px);justify-content: center;"
+    myGrid.style.cssText = "grid-template-columns: repeat(" + customGridSideLength +", " + (totalWidth/customGridSideLength) + "px);grid-template-rows: repeat(" + customGridSideLength +", " + (totalWidth/customGridSideLength) + "px);"
     //remove current divs and create new divs
     const allDivs = Array.from(document.querySelectorAll('.gridBlock'));
     allDivs.forEach(div => {
